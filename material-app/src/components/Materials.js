@@ -70,6 +70,7 @@ export const Materials = material => {
       setMaterials(
         materials.filter(material => material.material_id !== selectedIndex)
       );
+      getMaterials();
     } catch (error) {
       console.error(error.message);
     }
